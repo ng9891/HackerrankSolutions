@@ -65,7 +65,7 @@ int main(){
                 sum1-=h1[j];
                 j++; //tracking stack1
             }
-            else if (sum2 > sum1 && sum2 >= sum3){
+            else if (sum2 >= sum1 && sum2 >= sum3){
                 sum2-=h2[k];
                 k++; //tracking stack2
             }
