@@ -1,5 +1,4 @@
-
-
+//Save The Prisoner - 07/03/2016
 #include <cmath>
 #include <cstdio>
 #include <vector>
@@ -7,31 +6,25 @@
 #include <algorithm>
 using namespace std;
 
-
 int main() {
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
 	int t;
 	int long n, m , s, ss, mm;
-    cin>>t;
-    
-    for (int i=0; i<t; i++){
+	cin>>t;
+	
+	for (int i=0; i<t; i++){
 		cin>>n>>m>>s;
 
         ss = m%n;
-
-		if (ss== 0) //Case when mod gives a 0.
-			ss=n;
-        
+	if (ss== 0) //Case when mod gives a 0.
+		ss=n;
         if (ss + s-1 > n) //when m%n + s-1 is bigger than # of prisoners.
-			ss = ss - (n - (s-1)); 
-
-		else
+		ss = ss - (n - (s-1)); 
+	else
             ss = ss + s-1; // 2%5=2 | 2 + (1-1) = 2.
         
-		cout<<ss<<endl;
+	cout<<ss<<endl;
+        }
         
-        
-    }
 	/* from web. Very interesting.
 	int te;	
 	cin >> te;
