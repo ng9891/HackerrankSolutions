@@ -1,3 +1,4 @@
+//Sherlock and The Beast - 07/04/2016
 #include <cmath>
 #include <cstdio>
 #include <vector>
@@ -13,27 +14,24 @@ int main(){
         bool done = false;
         int n, amountFives, amountThrees;
         cin >> n;
-        amountFives = n;
-        amountThrees = 0;
+        amountFives = n; //Keep track of fives.
+        amountThrees = 0; //Keep track of threes.
         
         while (!done){
-            if(amountFives % 3 == 0 && amountThrees % 5 == 0)
+            if(amountFives % 3 == 0 && amountThrees % 5 == 0) //End Statement.
                 done = true;
             else{
-                if(amountFives - 5 < 0){
+                if(amountFives - 5 < 0){ 
                     amountFives = 0;
                     amountThrees = 0;
                     done = true;
                 }
                 else{
-                    amountFives -= 5;
+                    amountFives -= 5; //Because amount of threes has to be divisible by 5.
                     amountThrees += 5;
                 }
-                    
             }
-            
         }
-        
         if(amountFives + amountThrees == 0)
             printf("-1\n");
         else{
@@ -43,8 +41,6 @@ int main(){
                 printf("%d",3);
             cout<<endl;
         }
-           
-        
     }
     return 0;
 }
