@@ -1,3 +1,4 @@
+//Staircase - 07/03/2016
 #include <cmath>
 #include <cstdio>
 #include <vector>
