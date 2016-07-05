@@ -1,5 +1,4 @@
 //Kangaroo - 07/04/2016
-//Method found online. No need to go through all instances.
 #include <map>
 #include <set>
 #include <list>
