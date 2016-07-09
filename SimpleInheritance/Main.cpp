@@ -1,4 +1,4 @@
-//Simple Inheritance
+//Simple Inheritance - 07/08/2016
 #include <cmath>
 #include <cstdio>
 #include <vector>
