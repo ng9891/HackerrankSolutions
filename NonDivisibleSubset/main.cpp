@@ -42,7 +42,7 @@ int main() {
         count++;
     
     int j=k-1;
-    for(int i=1; i<j; i++){ //Compare remainders and take the biggest. K=5. 1+4, 2+3.
+    for(int i=1; i<j; i++){ //Compare remainders and take the biggest. K=5. 1+4, 2+3. Between 1 and 4 + 2 and 3.
         if (a[i] > a[j])
             count += a[i];
         else
