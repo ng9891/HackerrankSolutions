@@ -1,5 +1,5 @@
 /*
-String - 07/08/2016
+String - 07/10/2016
 The below code does the following:
   1. Input HRML code (string vector)
   2. Input QUER queries (string vector)
