@@ -1,5 +1,7 @@
 //Non-divisible-subset  -  07/10/2016
 /*Explanation:
+    As we dont need to print out the values of the subset and we only need to know the largest one. We can do this in O(n) time.
+    
     For any number K, the sum of 2 values (A & B) is evenly divisible by K if the sum of A%K + B%K is equal to K.
     EG. K=5. Remainder are 1+4 and 2+3.
     Take the biggest set between remainders 1 and 4. Also, take the biggest set between 2 and 3 and add them together.
@@ -11,7 +13,6 @@
     EG. K=6. We should at most one number of remainders 3. cause of 3+3. Remainders additions= 1+5 , 2+4, 3+3.
     
     Therefore, if remainder ==0, add a number to the result subset and if k%remainder == 0, add another number to the result subset.
-    
 */
 #include <iostream>
 using namespace std;
